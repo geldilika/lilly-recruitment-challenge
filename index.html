@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Tracker</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="disclaimer" id="disclaimer">
+        Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
+    </div>
+    <header>
+        <h1>Medicine Tracker</h1>
+    </header>
+    <main>
+        <form id="addMedicineForm" class="form-card">
+            <h2> Add a New Medicine</h2>
+            <label for="medName">Medicine Name:</label>
+            <input type="text" id="medName" placeholder="Medicine Name">
+            <label for="medPrice">Price (in £):</label>
+            <input type="float" id="medPrice" placeholder="Price">
+            <button type="submit">Add Medicine</button>
+
+            <p id="formMessage"></p>
+            <p id="actionMessage"></p>
+        </form>
+    
+
+    <div id="search-medicine" class="form-card">
+    <h2>Search Medicines</h2>
+        <label for="searchInput" class="search-label">Medicine Name:</label>
+        <input type="text" id="searchInput" placeholder="Filter Medicines" class="search-box">
+    </div>
+        <div id="medicineList"></div>
+        <button id="averagePriceButton">Calculate Average Price</button>
+    <p id="averagePriceDisplay">Price Average</p>
+    </main>
+
+    <footer>
+        <p>Medicine Tracker © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
